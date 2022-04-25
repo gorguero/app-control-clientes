@@ -19,7 +19,7 @@ export class ClienteServicio{
     getClientes():Observable<Cliente[]>{
 
         //Obtener los clientes
-        this.cliente = this.clientesCollection.snapshotChanges().pipe(
+        this.clientes = this.clientesCollection.snapshotChanges().pipe(
             map( cambios => {
                 return cambios.map( accion => {
                     const datos = accion.payload.doc.data() as Cliente;
