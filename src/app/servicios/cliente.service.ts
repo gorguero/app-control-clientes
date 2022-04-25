@@ -33,5 +33,9 @@ export class ClienteServicio{
 
     }
 
+    agregarCliente(cliente:Cliente){
+        this.clientesCollection.add(cliente);
+    }
+
 }
 
