@@ -87,14 +87,14 @@
             
             <div class="modal-header bg-info text-white">
                 <h5 class="modal-title">Agregar cliente</h5>
-                <button class="close" data-dismiss="modal">
+                <button class="close" data-bs-dismiss="modal" #botonCerrar>
                     <span>&times;</span>
                 </button>
             </div>
 
             <flash-messages></flash-messages>
 
-            <form #clienteForm="ngForm" (ngSubmit)="agregar(clienteForm.value)">
+            <form #clienteForm="ngForm" (ngSubmit)="agregar(clienteForm.value);">
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
